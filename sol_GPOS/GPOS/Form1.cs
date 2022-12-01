@@ -1,3 +1,6 @@
+using System.Data.OleDb;
+using System.Data;
+
 namespace GPOS
 {
     public partial class Form1 : Form
@@ -6,7 +9,8 @@ namespace GPOS
         {
             InitializeComponent();
         }
-
+        private string StrSQL = @"Provider=Microsoft.ACE.OLEDB.12.0;
+                    Data Source=result.accdb;Mode=Read"; // 데이터베이스 연결 문자열.
         Form_Order form_order;
         string selected_table = "";
         Button selected_button;
@@ -18,8 +22,10 @@ namespace GPOS
             selected_button = (Button)sender;
             selected_table = selected_button.Text;
 
-            lbl_SelectedTable.Text = selected_table;
+            lbl_SelectedTable.Text = selected_table + "번";
             lbl_nonSelect.Visible = false;
+
+            lv_Orders_View();
         }
 
         private void btnTable_MouseDown(object sender, MouseEventArgs e)
@@ -35,6 +41,46 @@ namespace GPOS
 
                 selected_button.Location = new Point(selected_button.Left - (MousePoint.X - e.X), selected_button.Top - (MousePoint.Y - e.Y));
             }
+        }
+
+        private void lv_Orders_View()
+        {
+            int i = 0; // No 작성시 사용
+            this.lv_Orders.Items.Clear();
+
+            var Conn = new OleDbConnection(StrSQL);
+            Conn.Open();
+
+            string Sql = "SELECT * FROM t_table" + selected_table + "Order";
+
+            var OleAdapter = new OleDbDataAdapter(Sql, Conn);
+
+            DataSet ds = new DataSet();
+            DataTable dt = ds.Tables.Add("dsTable");
+            OleAdapter.Fill(ds, "dsTable");
+
+            var query = dt.AsEnumerable().
+                Select(Orderlist => new
+                {
+                    Name = Orderlist.Field<string>("MenuName"),
+                    Count = Orderlist.Field<int>("MenuCount").ToString(),
+                    Price = Orderlist.Field<int>("MenuPrice").ToString()
+                });
+
+            foreach (var ListData in query)
+            {
+                i++;
+
+                var strArray = new String[] {
+                    i.ToString(),
+                    ListData.Name,
+                    ListData.Count,
+                    ListData.Price
+                };
+
+                this.lv_Orders.Items.Add(new ListViewItem(strArray));
+            }
+            Conn.Close();
         }
 
 
@@ -89,6 +135,8 @@ namespace GPOS
             btn_back.Visible = false;
 
             form_order.Close();
+
+            lv_Orders_View();
         }
     }
 }

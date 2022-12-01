@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace GPOS
 {
@@ -16,6 +18,12 @@ namespace GPOS
         Boolean isMeat = true;
         Boolean isMeal = false;
         Boolean isDrink = false;
+
+        // 누른 메뉴 버튼
+        private Button selected_button;
+
+        private string StrSQL = @"Provider=Microsoft.ACE.OLEDB.12.0;
+                   Data Source=result.accdb;Mode=ReadWrite"; // 데이터베이스 연결 문자열.
 
         // 버튼 이미지 경로를 설정하는 배열
         static string[] MeatAssets = new string[] 
@@ -81,8 +89,8 @@ namespace GPOS
         };
 
         // 기타
-        String savelbl = " 테이블";
-        String orderTable; // 선택된 테이블 번호
+        String savelbl = "번 테이블";
+        int orderTable; // 선택된 테이블 번호
 
         public struct Menu
         {
@@ -105,7 +113,7 @@ namespace GPOS
 
         public Form_Order(string selectedTable)
         {
-            orderTable = selectedTable;
+            orderTable = Convert.ToInt32(selectedTable);
             
             InitializeComponent();
         }
@@ -123,6 +131,8 @@ namespace GPOS
                 button5.Image = Image.FromFile(MeatAssets[4]);
                 button6.Image = Image.FromFile(MeatAssets[5]);
             }
+
+            lv_Orders_View();
         }
 
         private void btn_cate1_Click(object sender, EventArgs e)
@@ -170,45 +180,110 @@ namespace GPOS
             button6.Image = Image.FromFile(DrinkAssets[5]);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button_Click(object sender, EventArgs e)
         {
+            selected_button = (Button)sender;
+            int btnNum = Convert.ToInt32(selected_button.Tag) - 1;
+            int i = -1;
+
             if (isMeat)
             {
+                var Conn = new OleDbConnection(StrSQL);
 
+                Conn.Open();
+                string Sql = "INSERT INTO t_table" + orderTable + "Order(MenuName, MenuCount, MenuPrice) VALUES('";
+
+                Sql += MeatMenus[btnNum].N + "', " + 1 + ", " +
+                    MeatMenus[btnNum].P + ")";
+
+                var Comm = new OleDbCommand(Sql, Conn);
+                i = Comm.ExecuteNonQuery();
+                Conn.Close();
             }
             else if (isMeal)
             {
+                var Conn = new OleDbConnection(StrSQL);
 
+                Conn.Open();
+                string Sql = "INSERT INTO t_table" + orderTable + "Order(MenuName, MenuCount, MenuPrice) VALUES('";
+
+                Sql += MealMenus[btnNum].N + "', " + 1 + ", " +
+                    MealMenus[btnNum].P + ")";
+
+                var Comm = new OleDbCommand(Sql, Conn);
+                i = Comm.ExecuteNonQuery();
+                Conn.Close();
             }
             else if (isDrink)
             {
-                
+                var Conn = new OleDbConnection(StrSQL);
+
+                Conn.Open();
+                string Sql = "INSERT INTO t_table" + orderTable + "Order(MenuName, MenuCount, MenuPrice) VALUES('";
+
+                Sql += DrinkMenus[btnNum].N + "', " + 1 + ", " +
+                    DrinkMenus[btnNum].P + ")";
+
+                var Comm = new OleDbCommand(Sql, Conn);
+                i = Comm.ExecuteNonQuery();
+                Conn.Close();
             }
+
+            if (i == 0)
+            {
+                MessageBox.Show("정상적으로 데이터가 저장되지 않았습니다.", "에러",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            lv_Orders_View();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void lv_Orders_View()
         {
+            int i = 0; // No 작성시 사용
+            this.lv_Orders.Items.Clear();
 
+            var Conn = new OleDbConnection(StrSQL);
+            Conn.Open();
+
+            string Sql = "SELECT * FROM t_table" + orderTable + "Order";
+
+            var OleAdapter = new OleDbDataAdapter(Sql, Conn);
+
+            DataSet ds = new DataSet();
+            DataTable dt = ds.Tables.Add("dsTable");
+            OleAdapter.Fill(ds, "dsTable");
+
+            var query = dt.AsEnumerable().
+                Select(Orderlist => new
+                {
+                    Name = Orderlist.Field<string>("MenuName"),
+                    Count = Orderlist.Field<int>("MenuCount").ToString(),
+                    Price = Orderlist.Field<int>("MenuPrice").ToString()
+                });
+
+            foreach (var ListData in query)
+            {
+                i++;
+
+                var strArray = new String[] {
+                    i.ToString(),
+                    ListData.Name,
+                    ListData.Count,
+                    ListData.Price
+                };
+
+                this.lv_Orders.Items.Add(new ListViewItem(strArray));
+            }
+            Conn.Close();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btn_CountEdit_Click(object sender, EventArgs e)
         {
+            // string selected_menuCount = lv_Orders.;
+            Form_CountModify form_cm = new Form_CountModify();
 
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
+            form_cm.ShowDialog();
         }
     }
 }

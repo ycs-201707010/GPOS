@@ -16,5 +16,11 @@ namespace GPOS
         {
             InitializeComponent();
         }
+
+        public Form_CountModify(string MenuCount)
+        {
+            txt_Count.Text = MenuCount;
+            InitializeComponent();
+        }
     }
 }

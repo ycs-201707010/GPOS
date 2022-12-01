@@ -36,13 +36,10 @@
             this.lbl_Time = new System.Windows.Forms.Label();
             this.lbl_Date = new System.Windows.Forms.Label();
             this.lbl_Pos_System = new System.Windows.Forms.Label();
-            this.pan_Order = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_SelectedTable = new System.Windows.Forms.Label();
             this.lbl_nonSelect = new System.Windows.Forms.Label();
-            this.lbl_order = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.btn_Manage = new System.Windows.Forms.Button();
             this.btn_Pay = new System.Windows.Forms.Button();
             this.btn6 = new System.Windows.Forms.Button();
@@ -58,9 +55,14 @@
             this.btn5 = new System.Windows.Forms.Button();
             this.btn10 = new System.Windows.Forms.Button();
             this.btn15 = new System.Windows.Forms.Button();
+            this.lv_Orders = new System.Windows.Forms.ListView();
+            this.col_No = new System.Windows.Forms.ColumnHeader();
+            this.col_Name = new System.Windows.Forms.ColumnHeader();
+            this.col_Count = new System.Windows.Forms.ColumnHeader();
+            this.col_Cost = new System.Windows.Forms.ColumnHeader();
+            this.pan_Order = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn1
@@ -71,7 +73,7 @@
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(85, 85);
             this.btn1.TabIndex = 0;
-            this.btn1.Text = "1번";
+            this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btnTable_Click);
             this.btn1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnTable_MouseDown);
@@ -85,7 +87,7 @@
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(85, 85);
             this.btn2.TabIndex = 1;
-            this.btn2.Text = "2번";
+            this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
             this.btn2.Click += new System.EventHandler(this.btnTable_Click);
             this.btn2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnTable_MouseDown);
@@ -147,14 +149,6 @@
             this.lbl_Pos_System.TabIndex = 0;
             this.lbl_Pos_System.Text = "G POS SYSTEM";
             // 
-            // pan_Order
-            // 
-            this.pan_Order.Location = new System.Drawing.Point(828, 171);
-            this.pan_Order.Name = "pan_Order";
-            this.pan_Order.Size = new System.Drawing.Size(1337, 742);
-            this.pan_Order.TabIndex = 33;
-            this.pan_Order.Visible = false;
-            // 
             // timer1
             // 
             this.timer1.Interval = 1000;
@@ -192,24 +186,6 @@
             this.lbl_nonSelect.Text = "좌석을 선택하세요";
             this.lbl_nonSelect.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbl_order
-            // 
-            this.lbl_order.AutoSize = true;
-            this.lbl_order.Location = new System.Drawing.Point(12, 12);
-            this.lbl_order.Name = "lbl_order";
-            this.lbl_order.Size = new System.Drawing.Size(59, 15);
-            this.lbl_order.TabIndex = 16;
-            this.lbl_order.Text = "주문 내역";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.lbl_order);
-            this.panel3.Location = new System.Drawing.Point(931, 141);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(406, 550);
-            this.panel3.TabIndex = 17;
-            // 
             // btn_Manage
             // 
             this.btn_Manage.BackColor = System.Drawing.Color.DarkSalmon;
@@ -241,7 +217,7 @@
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(85, 85);
             this.btn6.TabIndex = 20;
-            this.btn6.Text = "6번";
+            this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
             this.btn6.Click += new System.EventHandler(this.btnTable_Click);
             this.btn6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnTable_MouseDown);
@@ -255,7 +231,7 @@
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(85, 85);
             this.btn7.TabIndex = 21;
-            this.btn7.Text = "7번";
+            this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
             this.btn7.Click += new System.EventHandler(this.btnTable_Click);
             this.btn7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnTable_MouseDown);
@@ -269,7 +245,7 @@
             this.btn11.Name = "btn11";
             this.btn11.Size = new System.Drawing.Size(85, 85);
             this.btn11.TabIndex = 22;
-            this.btn11.Text = "11번";
+            this.btn11.Text = "11";
             this.btn11.UseVisualStyleBackColor = false;
             this.btn11.Click += new System.EventHandler(this.btnTable_Click);
             this.btn11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnTable_MouseDown);
@@ -283,7 +259,7 @@
             this.btn12.Name = "btn12";
             this.btn12.Size = new System.Drawing.Size(85, 85);
             this.btn12.TabIndex = 23;
-            this.btn12.Text = "12번";
+            this.btn12.Text = "12";
             this.btn12.UseVisualStyleBackColor = false;
             this.btn12.Click += new System.EventHandler(this.btnTable_Click);
             this.btn12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnTable_MouseDown);
@@ -297,7 +273,7 @@
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(85, 85);
             this.btn3.TabIndex = 24;
-            this.btn3.Text = "3번";
+            this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
             this.btn3.Click += new System.EventHandler(this.btnTable_Click);
             this.btn3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnTable_MouseDown);
@@ -311,7 +287,7 @@
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(85, 85);
             this.btn8.TabIndex = 25;
-            this.btn8.Text = "8번";
+            this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = false;
             this.btn8.Click += new System.EventHandler(this.btnTable_Click);
             this.btn8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnTable_MouseDown);
@@ -325,7 +301,7 @@
             this.btn13.Name = "btn13";
             this.btn13.Size = new System.Drawing.Size(85, 85);
             this.btn13.TabIndex = 26;
-            this.btn13.Text = "13번";
+            this.btn13.Text = "13";
             this.btn13.UseVisualStyleBackColor = false;
             this.btn13.Click += new System.EventHandler(this.btnTable_Click);
             this.btn13.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnTable_MouseDown);
@@ -339,7 +315,7 @@
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(85, 85);
             this.btn4.TabIndex = 27;
-            this.btn4.Text = "4번";
+            this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = false;
             this.btn4.Click += new System.EventHandler(this.btnTable_Click);
             this.btn4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnTable_MouseDown);
@@ -353,7 +329,7 @@
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(85, 85);
             this.btn9.TabIndex = 28;
-            this.btn9.Text = "9번";
+            this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = false;
             this.btn9.Click += new System.EventHandler(this.btnTable_Click);
             this.btn9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnTable_MouseDown);
@@ -367,7 +343,7 @@
             this.btn14.Name = "btn14";
             this.btn14.Size = new System.Drawing.Size(85, 85);
             this.btn14.TabIndex = 29;
-            this.btn14.Text = "14번";
+            this.btn14.Text = "14";
             this.btn14.UseVisualStyleBackColor = false;
             this.btn14.Click += new System.EventHandler(this.btnTable_Click);
             this.btn14.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnTable_MouseDown);
@@ -381,7 +357,7 @@
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(85, 85);
             this.btn5.TabIndex = 30;
-            this.btn5.Text = "5번";
+            this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
             this.btn5.Click += new System.EventHandler(this.btnTable_Click);
             this.btn5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnTable_MouseDown);
@@ -395,7 +371,7 @@
             this.btn10.Name = "btn10";
             this.btn10.Size = new System.Drawing.Size(85, 85);
             this.btn10.TabIndex = 31;
-            this.btn10.Text = "10번";
+            this.btn10.Text = "10";
             this.btn10.UseVisualStyleBackColor = false;
             this.btn10.Click += new System.EventHandler(this.btnTable_Click);
             this.btn10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnTable_MouseDown);
@@ -409,11 +385,53 @@
             this.btn15.Name = "btn15";
             this.btn15.Size = new System.Drawing.Size(85, 85);
             this.btn15.TabIndex = 32;
-            this.btn15.Text = "15번";
+            this.btn15.Text = "15";
             this.btn15.UseVisualStyleBackColor = false;
             this.btn15.Click += new System.EventHandler(this.btnTable_Click);
             this.btn15.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnTable_MouseDown);
             this.btn15.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnTable_MouseMove);
+            // 
+            // lv_Orders
+            // 
+            this.lv_Orders.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.col_No,
+            this.col_Name,
+            this.col_Count,
+            this.col_Cost});
+            this.lv_Orders.GridLines = true;
+            this.lv_Orders.Location = new System.Drawing.Point(931, 141);
+            this.lv_Orders.Name = "lv_Orders";
+            this.lv_Orders.Size = new System.Drawing.Size(406, 551);
+            this.lv_Orders.TabIndex = 33;
+            this.lv_Orders.UseCompatibleStateImageBehavior = false;
+            this.lv_Orders.View = System.Windows.Forms.View.Details;
+            // 
+            // col_No
+            // 
+            this.col_No.Text = "No.";
+            this.col_No.Width = 50;
+            // 
+            // col_Name
+            // 
+            this.col_Name.Text = "상품명";
+            this.col_Name.Width = 210;
+            // 
+            // col_Count
+            // 
+            this.col_Count.Text = "수량";
+            // 
+            // col_Cost
+            // 
+            this.col_Cost.Text = "금액";
+            this.col_Cost.Width = 80;
+            // 
+            // pan_Order
+            // 
+            this.pan_Order.Location = new System.Drawing.Point(0, 74);
+            this.pan_Order.Name = "pan_Order";
+            this.pan_Order.Size = new System.Drawing.Size(1334, 742);
+            this.pan_Order.TabIndex = 34;
+            this.pan_Order.Visible = false;
             // 
             // Form1
             // 
@@ -422,6 +440,7 @@
             this.BackColor = System.Drawing.Color.NavajoWhite;
             this.ClientSize = new System.Drawing.Size(1336, 815);
             this.Controls.Add(this.pan_Order);
+            this.Controls.Add(this.lv_Orders);
             this.Controls.Add(this.btn_Pay);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn5);
@@ -431,7 +450,6 @@
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.btn6);
             this.Controls.Add(this.btn7);
             this.Controls.Add(this.btn8);
@@ -451,8 +469,6 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -468,8 +484,6 @@
         private Label lbl_Time;
         private Panel panel2;
         private Label lbl_SelectedTable;
-        private Label lbl_order;
-        private Panel panel3;
         private Button btn_Manage;
         private Button btn_Pay;
         private Button btn6;
@@ -486,7 +500,12 @@
         private Button btn10;
         private Button btn15;
         private Label lbl_nonSelect;
-        private Panel pan_Order;
         private Button btn_back;
+        private ListView lv_Orders;
+        private ColumnHeader col_No;
+        private ColumnHeader col_Name;
+        private ColumnHeader col_Count;
+        private ColumnHeader col_Cost;
+        private Panel pan_Order;
     }
 }

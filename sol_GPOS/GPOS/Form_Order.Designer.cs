@@ -36,10 +36,10 @@
             this.col_Cost = new System.Windows.Forms.ColumnHeader();
             this.lbl_OrderTable = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btn_disCount = new System.Windows.Forms.Button();
+            this.btn_CountEdit = new System.Windows.Forms.Button();
             this.btn_allCancel = new System.Windows.Forms.Button();
             this.btn_selectCancel = new System.Windows.Forms.Button();
-            this.btn_CountEdit = new System.Windows.Forms.Button();
-            this.btn_disCount = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -82,8 +82,10 @@
             this.col_Name,
             this.col_Count,
             this.col_Cost});
+            this.lv_Orders.FullRowSelect = true;
             this.lv_Orders.GridLines = true;
             this.lv_Orders.Location = new System.Drawing.Point(13, 44);
+            this.lv_Orders.MultiSelect = false;
             this.lv_Orders.Name = "lv_Orders";
             this.lv_Orders.Size = new System.Drawing.Size(404, 429);
             this.lv_Orders.TabIndex = 2;
@@ -139,6 +141,27 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(430, 62);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
+            // btn_disCount
+            // 
+            this.btn_disCount.Font = new System.Drawing.Font("나눔바른고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_disCount.Location = new System.Drawing.Point(324, 3);
+            this.btn_disCount.Name = "btn_disCount";
+            this.btn_disCount.Size = new System.Drawing.Size(101, 56);
+            this.btn_disCount.TabIndex = 9;
+            this.btn_disCount.Text = "할인";
+            this.btn_disCount.UseVisualStyleBackColor = true;
+            // 
+            // btn_CountEdit
+            // 
+            this.btn_CountEdit.Font = new System.Drawing.Font("나눔바른고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_CountEdit.Location = new System.Drawing.Point(3, 3);
+            this.btn_CountEdit.Name = "btn_CountEdit";
+            this.btn_CountEdit.Size = new System.Drawing.Size(101, 56);
+            this.btn_CountEdit.TabIndex = 6;
+            this.btn_CountEdit.Text = "수량";
+            this.btn_CountEdit.UseVisualStyleBackColor = true;
+            this.btn_CountEdit.Click += new System.EventHandler(this.btn_CountEdit_Click);
+            // 
             // btn_allCancel
             // 
             this.btn_allCancel.Font = new System.Drawing.Font("나눔바른고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -158,26 +181,6 @@
             this.btn_selectCancel.TabIndex = 7;
             this.btn_selectCancel.Text = "선택 취소";
             this.btn_selectCancel.UseVisualStyleBackColor = true;
-            // 
-            // btn_CountEdit
-            // 
-            this.btn_CountEdit.Font = new System.Drawing.Font("나눔바른고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_CountEdit.Location = new System.Drawing.Point(3, 3);
-            this.btn_CountEdit.Name = "btn_CountEdit";
-            this.btn_CountEdit.Size = new System.Drawing.Size(101, 56);
-            this.btn_CountEdit.TabIndex = 6;
-            this.btn_CountEdit.Text = "수량";
-            this.btn_CountEdit.UseVisualStyleBackColor = true;
-            // 
-            // btn_disCount
-            // 
-            this.btn_disCount.Font = new System.Drawing.Font("나눔바른고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_disCount.Location = new System.Drawing.Point(324, 3);
-            this.btn_disCount.Name = "btn_disCount";
-            this.btn_disCount.Size = new System.Drawing.Size(101, 56);
-            this.btn_disCount.TabIndex = 9;
-            this.btn_disCount.Text = "할인";
-            this.btn_disCount.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel2
             // 
@@ -328,8 +331,9 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(209, 166);
             this.button2.TabIndex = 1;
+            this.button2.Tag = "2";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.button_Click);
             // 
             // button3
             // 
@@ -337,8 +341,9 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(209, 166);
             this.button3.TabIndex = 2;
+            this.button3.Tag = "3";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.button_Click);
             // 
             // button4
             // 
@@ -346,8 +351,9 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(209, 166);
             this.button4.TabIndex = 3;
+            this.button4.Tag = "4";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.button_Click);
             // 
             // button5
             // 
@@ -355,8 +361,9 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(209, 166);
             this.button5.TabIndex = 4;
+            this.button5.Tag = "5";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.button_Click);
             // 
             // button6
             // 
@@ -364,8 +371,9 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(209, 166);
             this.button6.TabIndex = 5;
+            this.button6.Tag = "6";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.button_Click);
             // 
             // button1
             // 
@@ -373,8 +381,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(209, 166);
             this.button1.TabIndex = 0;
+            this.button1.Tag = "1";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.button_Click);
             // 
             // Form_Order
             // 
