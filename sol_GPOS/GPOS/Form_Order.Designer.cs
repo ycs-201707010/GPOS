@@ -91,6 +91,7 @@
             this.lv_Orders.TabIndex = 2;
             this.lv_Orders.UseCompatibleStateImageBehavior = false;
             this.lv_Orders.View = System.Windows.Forms.View.Details;
+            this.lv_Orders.SelectedIndexChanged += new System.EventHandler(this.lv_Orders_SelectedIndexChanged);
             // 
             // col_No
             // 
@@ -214,11 +215,11 @@
             this.lbl_totPrice.AutoSize = true;
             this.lbl_totPrice.Font = new System.Drawing.Font("맑은 고딕", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_totPrice.ForeColor = System.Drawing.Color.Maroon;
-            this.lbl_totPrice.Location = new System.Drawing.Point(246, 50);
+            this.lbl_totPrice.Location = new System.Drawing.Point(340, 50);
             this.lbl_totPrice.Name = "lbl_totPrice";
-            this.lbl_totPrice.Size = new System.Drawing.Size(181, 47);
+            this.lbl_totPrice.Size = new System.Drawing.Size(87, 47);
             this.lbl_totPrice.TabIndex = 1;
-            this.lbl_totPrice.Text = "nn,nnn 원";
+            this.lbl_totPrice.Text = "0 원";
             // 
             // tableLayoutPanel3
             // 

@@ -88,3 +88,38 @@ D:\기업솔루션프로젝트\팀플\sol_GPOS\GPOS\bin\Debug\net6.0-windows\run
 D:\기업솔루션프로젝트\팀플\sol_GPOS\GPOS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\기업솔루션프로젝트\팀플\sol_GPOS\GPOS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\기업솔루션프로젝트\팀플\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.csproj.CopyComplete
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\bin\Debug\net6.0-windows\GPOS.exe
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\bin\Debug\net6.0-windows\GPOS.deps.json
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\bin\Debug\net6.0-windows\GPOS.runtimeconfig.json
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\bin\Debug\net6.0-windows\GPOS.dll
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\bin\Debug\net6.0-windows\GPOS.pdb
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\bin\Debug\net6.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Data.OleDb.dll
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Diagnostics.PerformanceCounter.dll
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Drawing.Common.dll
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Security.Permissions.dll
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Windows.Extensions.dll
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Data.OleDb.dll
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.Form1.resources
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.Form_CountModify.resources
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.Form_Order.resources
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.Properties.Resources.resources
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.csproj.GenerateResource.cache
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.AssemblyInfo.cs
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.csproj.CopyComplete
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.dll
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\refint\GPOS.dll
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.pdb
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.genruntimeconfig.cache
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\ref\GPOS.dll

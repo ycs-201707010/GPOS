@@ -51,10 +51,13 @@
             // 
             this.txt_Count.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_Count.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt_Count.ForeColor = System.Drawing.Color.Maroon;
             this.txt_Count.Location = new System.Drawing.Point(123, 75);
             this.txt_Count.Name = "txt_Count";
             this.txt_Count.Size = new System.Drawing.Size(141, 63);
             this.txt_Count.TabIndex = 1;
+            this.txt_Count.Text = "0";
+            this.txt_Count.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btn_Minus
             // 
@@ -65,6 +68,7 @@
             this.btn_Minus.TabIndex = 2;
             this.btn_Minus.Text = "-";
             this.btn_Minus.UseVisualStyleBackColor = true;
+            this.btn_Minus.Click += new System.EventHandler(this.btn_Minus_Click);
             // 
             // btn_Plus
             // 
@@ -75,6 +79,7 @@
             this.btn_Plus.TabIndex = 3;
             this.btn_Plus.Text = "+";
             this.btn_Plus.UseVisualStyleBackColor = true;
+            this.btn_Plus.Click += new System.EventHandler(this.btn_Plus_Click);
             // 
             // btn_Cancel
             // 
@@ -84,6 +89,7 @@
             this.btn_Cancel.TabIndex = 4;
             this.btn_Cancel.Text = "취소";
             this.btn_Cancel.UseVisualStyleBackColor = true;
+            this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
             // 
             // btn_Ok
             // 
@@ -93,12 +99,13 @@
             this.btn_Ok.TabIndex = 5;
             this.btn_Ok.Text = "확인";
             this.btn_Ok.UseVisualStyleBackColor = true;
+            this.btn_Ok.Click += new System.EventHandler(this.btn_Ok_Click);
             // 
             // Form_CountModify
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Azure;
+            this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(384, 221);
             this.Controls.Add(this.btn_Ok);
             this.Controls.Add(this.btn_Cancel);
@@ -109,7 +116,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Form_CountModify";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form_CountModify";
+            this.Load += new System.EventHandler(this.Form_CountModify_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

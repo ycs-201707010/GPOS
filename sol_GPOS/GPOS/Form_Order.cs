@@ -318,10 +318,32 @@ namespace GPOS
 
         private void btn_CountEdit_Click(object sender, EventArgs e)
         {
-            // string selected_menuCount = lv_Orders.;
-            Form_CountModify form_cm = new Form_CountModify();
+            if (lv_Orders.SelectedItems.Count == 0) // 선택한 아이템이 없다면?
+            {
+                MessageBox.Show("먼저 아이템을 선택해주세요", "알림",
+                   MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+                return;
+            }
+
+            Form_CountModify form_cm = new Form_CountModify();
+            form_cm.MenuCount = lv_Orders.SelectedItems[0].SubItems[2].Text.ToString();
+            form_cm.OrderTable = orderTable;
+            form_cm.MenuName = lv_Orders.SelectedItems[0].SubItems[1].Text.ToString();
+            form_cm.MenuPrice = lv_Orders.SelectedItems[0].SubItems[3].Text.ToString();
             form_cm.ShowDialog();
+
+
+            if (form_cm.DialogResult == DialogResult.OK)
+            {
+                lv_Orders_View(); // 바뀐 주문내역 DB를 리스트뷰에 옮겨담기
+                lbl_totPriceModify(); // 변동된 총 가격을 lbl_totPrice에 반영
+            }
+        }
+
+        private void lv_Orders_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
