@@ -42,7 +42,7 @@
             this.btn_selectCancel = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_totPrice = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btn_cate2 = new System.Windows.Forms.Button();
             this.btn_cate1 = new System.Windows.Forms.Button();
@@ -114,10 +114,10 @@
             // lbl_OrderTable
             // 
             this.lbl_OrderTable.AutoSize = true;
-            this.lbl_OrderTable.Font = new System.Drawing.Font("나눔바른고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_OrderTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_OrderTable.Location = new System.Drawing.Point(13, 14);
             this.lbl_OrderTable.Name = "lbl_OrderTable";
-            this.lbl_OrderTable.Size = new System.Drawing.Size(115, 27);
+            this.lbl_OrderTable.Size = new System.Drawing.Size(110, 29);
             this.lbl_OrderTable.TabIndex = 1;
             this.lbl_OrderTable.Text = "n번 테이블";
             // 
@@ -143,7 +143,7 @@
             // 
             // btn_disCount
             // 
-            this.btn_disCount.Font = new System.Drawing.Font("나눔바른고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_disCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_disCount.Location = new System.Drawing.Point(324, 3);
             this.btn_disCount.Name = "btn_disCount";
             this.btn_disCount.Size = new System.Drawing.Size(101, 56);
@@ -153,7 +153,7 @@
             // 
             // btn_CountEdit
             // 
-            this.btn_CountEdit.Font = new System.Drawing.Font("나눔바른고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_CountEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_CountEdit.Location = new System.Drawing.Point(3, 3);
             this.btn_CountEdit.Name = "btn_CountEdit";
             this.btn_CountEdit.Size = new System.Drawing.Size(101, 56);
@@ -164,7 +164,7 @@
             // 
             // btn_allCancel
             // 
-            this.btn_allCancel.Font = new System.Drawing.Font("나눔바른고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_allCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_allCancel.Location = new System.Drawing.Point(110, 3);
             this.btn_allCancel.Name = "btn_allCancel";
             this.btn_allCancel.Size = new System.Drawing.Size(101, 56);
@@ -174,7 +174,7 @@
             // 
             // btn_selectCancel
             // 
-            this.btn_selectCancel.Font = new System.Drawing.Font("나눔바른고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_selectCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_selectCancel.Location = new System.Drawing.Point(217, 3);
             this.btn_selectCancel.Name = "btn_selectCancel";
             this.btn_selectCancel.Size = new System.Drawing.Size(101, 56);
@@ -189,7 +189,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label2, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_totPrice, 1, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 583);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
@@ -201,24 +201,24 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("나눔바른고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(59, 60);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(60, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 27);
+            this.label1.Size = new System.Drawing.Size(51, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "총액";
             // 
-            // label2
+            // lbl_totPrice
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("나눔바른고딕", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Maroon;
-            this.label2.Location = new System.Drawing.Point(312, 60);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 27);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "nn,nnn 원";
+            this.lbl_totPrice.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbl_totPrice.AutoSize = true;
+            this.lbl_totPrice.Font = new System.Drawing.Font("맑은 고딕", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_totPrice.ForeColor = System.Drawing.Color.Maroon;
+            this.lbl_totPrice.Location = new System.Drawing.Point(246, 50);
+            this.lbl_totPrice.Name = "lbl_totPrice";
+            this.lbl_totPrice.Size = new System.Drawing.Size(181, 47);
+            this.lbl_totPrice.TabIndex = 1;
+            this.lbl_totPrice.Text = "nn,nnn 원";
             // 
             // tableLayoutPanel3
             // 
@@ -271,7 +271,7 @@
             // 
             // btn_Pay
             // 
-            this.btn_Pay.Font = new System.Drawing.Font("나눔바른고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Pay.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_Pay.Location = new System.Drawing.Point(3, 3);
             this.btn_Pay.Name = "btn_Pay";
             this.btn_Pay.Size = new System.Drawing.Size(252, 90);
@@ -295,7 +295,7 @@
             // 
             // btn_doOrder
             // 
-            this.btn_doOrder.Font = new System.Drawing.Font("나눔바른고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_doOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_doOrder.Location = new System.Drawing.Point(261, 3);
             this.btn_doOrder.Name = "btn_doOrder";
             this.btn_doOrder.Size = new System.Drawing.Size(252, 90);
@@ -432,7 +432,7 @@
         private Button btn_disCount;
         private TableLayoutPanel tableLayoutPanel2;
         private Label label1;
-        private Label label2;
+        private Label lbl_totPrice;
         private TableLayoutPanel tableLayoutPanel3;
         private Button btn_Pay;
         private TableLayoutPanel tableLayoutPanel4;

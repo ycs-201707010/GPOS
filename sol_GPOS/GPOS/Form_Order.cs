@@ -106,6 +106,7 @@ namespace GPOS
             public string L { get; }
         }
 
+
         public Form_Order()
         {
             InitializeComponent();
@@ -133,6 +134,7 @@ namespace GPOS
             }
 
             lv_Orders_View();
+            lbl_totPriceModify();
         }
 
         private void btn_cate1_Click(object sender, EventArgs e)
@@ -182,63 +184,66 @@ namespace GPOS
 
         private void button_Click(object sender, EventArgs e)
         {
-            selected_button = (Button)sender;
-            int btnNum = Convert.ToInt32(selected_button.Tag) - 1;
-            int i = -1;
+            selected_button = (Button)sender; // 어떤 버튼을 눌렀는지 버튼 객체를 받아옴
+            int btnNum = Convert.ToInt32(selected_button.Tag) - 1; // 몇번 버튼을 눌렀는지 번호를 받아오고 1을 차감 (배열의 인덱스로 사용)
+            int i = -1; // SQL 구문에 의해 영향을 받은 행의 개수.
 
+            string add_menu = "";
+            int menu_price = 0;
+            bool is_existed = false;
+
+            string sql; // 실행할 sql 구문
+
+            // 선택한 버튼의 종류, 버튼의 번호에 따라 메뉴 명과 가격을 불러온다.
             if (isMeat)
             {
-                var Conn = new OleDbConnection(StrSQL);
-
-                Conn.Open();
-                string Sql = "INSERT INTO t_table" + orderTable + "Order(MenuName, MenuCount, MenuPrice) VALUES('";
-
-                Sql += MeatMenus[btnNum].N + "', " + 1 + ", " +
-                    MeatMenus[btnNum].P + ")";
-
-                var Comm = new OleDbCommand(Sql, Conn);
-                i = Comm.ExecuteNonQuery();
-                Conn.Close();
+                add_menu = MeatMenus[btnNum].N;
+                menu_price = MeatMenus[btnNum].P;
             }
             else if (isMeal)
             {
-                var Conn = new OleDbConnection(StrSQL);
-
-                Conn.Open();
-                string Sql = "INSERT INTO t_table" + orderTable + "Order(MenuName, MenuCount, MenuPrice) VALUES('";
-
-                Sql += MealMenus[btnNum].N + "', " + 1 + ", " +
-                    MealMenus[btnNum].P + ")";
-
-                var Comm = new OleDbCommand(Sql, Conn);
-                i = Comm.ExecuteNonQuery();
-                Conn.Close();
+                add_menu = MealMenus[btnNum].N;
+                menu_price = MealMenus[btnNum].P;
             }
             else if (isDrink)
             {
-                var Conn = new OleDbConnection(StrSQL);
-
-                Conn.Open();
-                string Sql = "INSERT INTO t_table" + orderTable + "Order(MenuName, MenuCount, MenuPrice) VALUES('";
-
-                Sql += DrinkMenus[btnNum].N + "', " + 1 + ", " +
-                    DrinkMenus[btnNum].P + ")";
-
-                var Comm = new OleDbCommand(Sql, Conn);
-                i = Comm.ExecuteNonQuery();
-                Conn.Close();
+                add_menu = DrinkMenus[btnNum].N;
+                menu_price = DrinkMenus[btnNum].P;
             }
 
-            if (i == 0)
+            // 1. ListViewItem에서 아이템 목록을 살펴본다.
+            // 2. 메뉴 명이 똑같은 아이템이 있으면 SQL 구문은 UPDATE
+            // 2-1. 존재하지 않으면, SQL 구문은 INSERT 구문.
+            // 3. SQL 구문을 실행.
+
+            // 1. ListViewItem에서 아이템 목록을 살펴본다.
+            for (var k = 0; k < lv_Orders.Items.Count; k++)
             {
-                MessageBox.Show("정상적으로 데이터가 저장되지 않았습니다.", "에러",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (add_menu == lv_Orders.Items[k].SubItems[1].Text)
+                {
+                    is_existed = true;
+
+                    break;
+                }
             }
 
-            lv_Orders_View();
+            if (is_existed) // 새로 들어온 메뉴일 경우
+            {
+                sql = "UPDATE t_table" + orderTable + "Order SET MenuCount = MenuCount + 1, MenuPrice = " + menu_price + " * (MenuCount + 1) WHERE MenuName = '" + add_menu + "';";
+            }
+            else
+            {
+                sql = "INSERT INTO t_table" + orderTable + "Order(MenuName, MenuCount, MenuPrice) VALUES('";
+
+                sql += add_menu + "', " + 1 + ", " + menu_price + ")";
+            }
+
+            sql_Comm_Execute(sql); // sql 구문 실행
+            lv_Orders_View(); // 바뀐 주문내역 DB를 리스트뷰에 옮겨담기
+            lbl_totPriceModify(); // 변동된 총 가격을 lbl_totPrice에 반영
         }
 
-        private void lv_Orders_View()
+        private void lv_Orders_View() // 데이터베이스에 반영된 주문 목록을 리스트뷰에 출력하는 메서드.
         {
             int i = 0; // No 작성시 사용
             this.lv_Orders.Items.Clear();
@@ -276,6 +281,39 @@ namespace GPOS
                 this.lv_Orders.Items.Add(new ListViewItem(strArray));
             }
             Conn.Close();
+        }
+
+        private void lbl_totPriceModify()
+        {
+            int totPrice = 0;
+            int curPrice = 0;
+
+            for (var k = 0; k < lv_Orders.Items.Count; k++)
+            {
+                curPrice = Convert.ToInt32(lv_Orders.Items[k].SubItems[3].Text);
+                totPrice += curPrice;
+            }
+
+            lbl_totPrice.Text = totPrice + " 원";
+        }
+
+        private void sql_Comm_Execute(string SQL)
+        {
+            var Conn = new OleDbConnection(StrSQL);
+            int i;
+
+            Conn.Open();
+
+            var Comm = new OleDbCommand(SQL, Conn);
+            i = Comm.ExecuteNonQuery();
+
+            Conn.Close();
+
+            if (i == 0)
+            {
+                MessageBox.Show("정상적으로 데이터가 저장되지 않았습니다.", "에러",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btn_CountEdit_Click(object sender, EventArgs e)
