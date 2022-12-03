@@ -138,5 +138,11 @@ namespace GPOS
 
             lv_Orders_View();
         }
+
+        private void btn_Pay_Click(object sender, EventArgs e)
+        {
+            Form_Pay f_pay = new Form_Pay();
+            f_pay.ShowDialog();
+        }
     }
 }

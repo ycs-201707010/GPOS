@@ -341,9 +341,56 @@ namespace GPOS
             }
         }
 
-        private void lv_Orders_SelectedIndexChanged(object sender, EventArgs e)
+        private void btn_allCancel_Click(object sender, EventArgs e) // 전체 취소 버튼
         {
+            var Conn = new OleDbConnection(StrSQL);
+            int i;
 
+            Conn.Open();
+
+            string sql = "DELETE FROM t_table" + orderTable + "Order";
+
+            var Comm = new OleDbCommand(sql, Conn);
+            i = Comm.ExecuteNonQuery();
+
+            Conn.Close();
+
+            this.lv_Orders.Items.Clear();
+            lbl_totPriceModify();
+        }
+
+        private void btn_selectCancel_Click(object sender, EventArgs e)
+        {
+            if (lv_Orders.SelectedItems.Count == 0) // 선택한 아이템이 없다면?
+            {
+                MessageBox.Show("먼저 아이템을 선택해주세요", "알림",
+                   MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                return;
+            }
+
+            string MenuName = lv_Orders.SelectedItems[0].SubItems[1].Text.ToString();
+
+            var Conn = new OleDbConnection(StrSQL);
+            int i;
+
+            Conn.Open();
+
+            string sql = "DELETE FROM t_table" + orderTable + "Order WHERE MenuName = '" + MenuName + "'";
+
+            var Comm = new OleDbCommand(sql, Conn);
+            i = Comm.ExecuteNonQuery();
+
+            Conn.Close();
+
+            lv_Orders_View();
+            lbl_totPriceModify();
+        }
+
+        private void btn_Pay_Click(object sender, EventArgs e)
+        {
+            Form_Pay f_pay = new Form_Pay();
+            f_pay.ShowDialog();
         }
     }
 }

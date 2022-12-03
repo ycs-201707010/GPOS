@@ -123,3 +123,4 @@ C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\
 C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.pdb
 C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.genruntimeconfig.cache
 C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\ref\GPOS.dll
+C:\Users\User\Desktop\C# 팀플\git\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.Form_Pay.resources

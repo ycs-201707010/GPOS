@@ -36,7 +36,6 @@
             this.col_Cost = new System.Windows.Forms.ColumnHeader();
             this.lbl_OrderTable = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btn_disCount = new System.Windows.Forms.Button();
             this.btn_CountEdit = new System.Windows.Forms.Button();
             this.btn_allCancel = new System.Windows.Forms.Button();
             this.btn_selectCancel = new System.Windows.Forms.Button();
@@ -91,7 +90,6 @@
             this.lv_Orders.TabIndex = 2;
             this.lv_Orders.UseCompatibleStateImageBehavior = false;
             this.lv_Orders.View = System.Windows.Forms.View.Details;
-            this.lv_Orders.SelectedIndexChanged += new System.EventHandler(this.lv_Orders_SelectedIndexChanged);
             // 
             // col_No
             // 
@@ -125,12 +123,10 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.btn_disCount, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.btn_CountEdit, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btn_allCancel, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.btn_selectCancel, 2, 0);
@@ -142,22 +138,12 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(430, 62);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
-            // btn_disCount
-            // 
-            this.btn_disCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_disCount.Location = new System.Drawing.Point(324, 3);
-            this.btn_disCount.Name = "btn_disCount";
-            this.btn_disCount.Size = new System.Drawing.Size(101, 56);
-            this.btn_disCount.TabIndex = 9;
-            this.btn_disCount.Text = "할인";
-            this.btn_disCount.UseVisualStyleBackColor = true;
-            // 
             // btn_CountEdit
             // 
             this.btn_CountEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_CountEdit.Location = new System.Drawing.Point(3, 3);
             this.btn_CountEdit.Name = "btn_CountEdit";
-            this.btn_CountEdit.Size = new System.Drawing.Size(101, 56);
+            this.btn_CountEdit.Size = new System.Drawing.Size(137, 56);
             this.btn_CountEdit.TabIndex = 6;
             this.btn_CountEdit.Text = "수량";
             this.btn_CountEdit.UseVisualStyleBackColor = true;
@@ -166,22 +152,24 @@
             // btn_allCancel
             // 
             this.btn_allCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_allCancel.Location = new System.Drawing.Point(110, 3);
+            this.btn_allCancel.Location = new System.Drawing.Point(146, 3);
             this.btn_allCancel.Name = "btn_allCancel";
-            this.btn_allCancel.Size = new System.Drawing.Size(101, 56);
+            this.btn_allCancel.Size = new System.Drawing.Size(137, 56);
             this.btn_allCancel.TabIndex = 8;
             this.btn_allCancel.Text = "전체 취소";
             this.btn_allCancel.UseVisualStyleBackColor = true;
+            this.btn_allCancel.Click += new System.EventHandler(this.btn_allCancel_Click);
             // 
             // btn_selectCancel
             // 
             this.btn_selectCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_selectCancel.Location = new System.Drawing.Point(217, 3);
+            this.btn_selectCancel.Location = new System.Drawing.Point(289, 3);
             this.btn_selectCancel.Name = "btn_selectCancel";
-            this.btn_selectCancel.Size = new System.Drawing.Size(101, 56);
+            this.btn_selectCancel.Size = new System.Drawing.Size(138, 56);
             this.btn_selectCancel.TabIndex = 7;
             this.btn_selectCancel.Text = "선택 취소";
             this.btn_selectCancel.UseVisualStyleBackColor = true;
+            this.btn_selectCancel.Click += new System.EventHandler(this.btn_selectCancel_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -279,6 +267,7 @@
             this.btn_Pay.TabIndex = 8;
             this.btn_Pay.Text = "결제하기";
             this.btn_Pay.UseVisualStyleBackColor = true;
+            this.btn_Pay.Click += new System.EventHandler(this.btn_Pay_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -430,7 +419,6 @@
         private Button btn_allCancel;
         private Button btn_selectCancel;
         private Button btn_CountEdit;
-        private Button btn_disCount;
         private TableLayoutPanel tableLayoutPanel2;
         private Label label1;
         private Label lbl_totPrice;

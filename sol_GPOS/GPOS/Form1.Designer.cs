@@ -208,6 +208,7 @@
             this.btn_Pay.TabIndex = 19;
             this.btn_Pay.Text = "결제하기";
             this.btn_Pay.UseVisualStyleBackColor = false;
+            this.btn_Pay.Click += new System.EventHandler(this.btn_Pay_Click);
             // 
             // btn6
             // 
