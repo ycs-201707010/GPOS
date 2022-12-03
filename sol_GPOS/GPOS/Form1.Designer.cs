@@ -95,7 +95,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(134)))), ((int)(((byte)(92)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.panel1.Controls.Add(this.btn_back);
             this.panel1.Controls.Add(this.lbl_Time);
             this.panel1.Controls.Add(this.lbl_Date);
@@ -121,6 +121,7 @@
             // 
             this.lbl_Time.AutoSize = true;
             this.lbl_Time.Font = new System.Drawing.Font("한컴 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Time.ForeColor = System.Drawing.Color.White;
             this.lbl_Time.Location = new System.Drawing.Point(1157, 43);
             this.lbl_Time.Name = "lbl_Time";
             this.lbl_Time.Size = new System.Drawing.Size(65, 19);
@@ -132,6 +133,7 @@
             // 
             this.lbl_Date.AutoSize = true;
             this.lbl_Date.Font = new System.Drawing.Font("한컴 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Date.ForeColor = System.Drawing.Color.White;
             this.lbl_Date.Location = new System.Drawing.Point(1123, 12);
             this.lbl_Date.Name = "lbl_Date";
             this.lbl_Date.Size = new System.Drawing.Size(136, 35);
@@ -143,7 +145,8 @@
             // 
             this.lbl_Pos_System.AutoSize = true;
             this.lbl_Pos_System.Font = new System.Drawing.Font("한컴 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Pos_System.Location = new System.Drawing.Point(17, 23);
+            this.lbl_Pos_System.ForeColor = System.Drawing.Color.White;
+            this.lbl_Pos_System.Location = new System.Drawing.Point(12, 19);
             this.lbl_Pos_System.Name = "lbl_Pos_System";
             this.lbl_Pos_System.Size = new System.Drawing.Size(206, 35);
             this.lbl_Pos_System.TabIndex = 0;

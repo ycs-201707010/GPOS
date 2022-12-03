@@ -128,8 +128,8 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.Controls.Add(this.btn_CountEdit, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btn_allCancel, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btn_selectCancel, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btn_allCancel, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btn_selectCancel, 1, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 511);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
@@ -152,7 +152,7 @@
             // btn_allCancel
             // 
             this.btn_allCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_allCancel.Location = new System.Drawing.Point(146, 3);
+            this.btn_allCancel.Location = new System.Drawing.Point(289, 3);
             this.btn_allCancel.Name = "btn_allCancel";
             this.btn_allCancel.Size = new System.Drawing.Size(137, 56);
             this.btn_allCancel.TabIndex = 8;
@@ -162,18 +162,22 @@
             // 
             // btn_selectCancel
             // 
+            this.btn_selectCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
+            this.btn_selectCancel.FlatAppearance.BorderSize = 0;
+            this.btn_selectCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_selectCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_selectCancel.Location = new System.Drawing.Point(289, 3);
+            this.btn_selectCancel.ForeColor = System.Drawing.Color.White;
+            this.btn_selectCancel.Location = new System.Drawing.Point(146, 3);
             this.btn_selectCancel.Name = "btn_selectCancel";
-            this.btn_selectCancel.Size = new System.Drawing.Size(138, 56);
+            this.btn_selectCancel.Size = new System.Drawing.Size(137, 56);
             this.btn_selectCancel.TabIndex = 7;
             this.btn_selectCancel.Text = "선택 취소";
-            this.btn_selectCancel.UseVisualStyleBackColor = true;
+            this.btn_selectCancel.UseVisualStyleBackColor = false;
             this.btn_selectCancel.Click += new System.EventHandler(this.btn_selectCancel_Click);
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.LightCyan;
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
@@ -191,6 +195,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(60, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 29);
@@ -202,7 +207,7 @@
             this.lbl_totPrice.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbl_totPrice.AutoSize = true;
             this.lbl_totPrice.Font = new System.Drawing.Font("맑은 고딕", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_totPrice.ForeColor = System.Drawing.Color.Maroon;
+            this.lbl_totPrice.ForeColor = System.Drawing.Color.White;
             this.lbl_totPrice.Location = new System.Drawing.Point(340, 50);
             this.lbl_totPrice.Name = "lbl_totPrice";
             this.lbl_totPrice.Size = new System.Drawing.Size(87, 47);
@@ -379,7 +384,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSalmon;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.ClientSize = new System.Drawing.Size(1334, 742);
             this.Controls.Add(this.tableLayoutPanel5);
             this.Controls.Add(this.tableLayoutPanel4);
