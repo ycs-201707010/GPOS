@@ -139,7 +139,7 @@ namespace GPOS
             lv_Orders_View();
         }
 
-        private void btn_Pay_Click(object sender, EventArgs e)
+        private void btn_Pay_Click(object sender, EventArgs e) // 결제하기 버튼 눌렀을 때.
         {
             Form_Pay f_pay = new Form_Pay();
             f_pay.ShowDialog();

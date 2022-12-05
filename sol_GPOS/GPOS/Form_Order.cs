@@ -49,7 +49,7 @@ namespace GPOS
         static string[] DrinkAssets = new string[]
         {
                 Application.StartupPath + "\\Resources\\drinks\\soju.png",
-                Application.StartupPath + "\\Resources\\drinks\\beer.png",
+                Application.StartupPath + "\\Resources\\drinks\\beer_sub.png",
                 Application.StartupPath + "\\Resources\\drinks\\makgulri.png",
                 Application.StartupPath + "\\Resources\\drinks\\eagleflower.png",
                 Application.StartupPath + "\\Resources\\drinks\\tictok.png",
@@ -91,6 +91,7 @@ namespace GPOS
         // 기타
         String savelbl = "번 테이블";
         int orderTable; // 선택된 테이블 번호
+        int totPrice = 0; // 선택된 테이블의 주문한 총 금액.
 
         public struct Menu
         {
@@ -285,7 +286,7 @@ namespace GPOS
 
         private void lbl_totPriceModify()
         {
-            int totPrice = 0;
+            totPrice = 0;
             int curPrice = 0;
 
             for (var k = 0; k < lv_Orders.Items.Count; k++)
@@ -368,6 +369,10 @@ namespace GPOS
 
                 return;
             }
+
+            /*MessageBox mb_alert = new MessageBox("정말 주문 내역을 삭제하시겠습니까?", "알림", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+            mb_alert.Show();*/
 
             string MenuName = lv_Orders.SelectedItems[0].SubItems[1].Text.ToString();
 

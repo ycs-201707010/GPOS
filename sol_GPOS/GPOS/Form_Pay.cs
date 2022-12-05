@@ -17,6 +17,8 @@ namespace GPOS
             InitializeComponent();
         }
 
+        //private 
+
         private void btn_exit_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;

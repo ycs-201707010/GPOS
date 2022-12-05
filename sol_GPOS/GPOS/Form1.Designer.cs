@@ -67,8 +67,11 @@
             // 
             // btn1
             // 
-            this.btn1.BackColor = System.Drawing.Color.Gold;
-            this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn1.FlatAppearance.BorderSize = 0;
+            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn1.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn1.ForeColor = System.Drawing.Color.White;
             this.btn1.Location = new System.Drawing.Point(154, 243);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(85, 85);
@@ -81,8 +84,11 @@
             // 
             // btn2
             // 
-            this.btn2.BackColor = System.Drawing.Color.Gold;
-            this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn2.FlatAppearance.BorderSize = 0;
+            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn2.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn2.ForeColor = System.Drawing.Color.White;
             this.btn2.Location = new System.Drawing.Point(274, 243);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(85, 85);
@@ -107,12 +113,14 @@
             // 
             // btn_back
             // 
-            this.btn_back.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_back.Font = new System.Drawing.Font("맑은 고딕", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.btn_back.Location = new System.Drawing.Point(17, 12);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(50, 50);
             this.btn_back.TabIndex = 3;
-            this.btn_back.Text = "<";
+            this.btn_back.Text = "《";
             this.btn_back.UseVisualStyleBackColor = true;
             this.btn_back.Visible = false;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
@@ -121,7 +129,7 @@
             // 
             this.lbl_Time.AutoSize = true;
             this.lbl_Time.Font = new System.Drawing.Font("한컴 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Time.ForeColor = System.Drawing.Color.White;
+            this.lbl_Time.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.lbl_Time.Location = new System.Drawing.Point(1157, 43);
             this.lbl_Time.Name = "lbl_Time";
             this.lbl_Time.Size = new System.Drawing.Size(65, 19);
@@ -133,7 +141,7 @@
             // 
             this.lbl_Date.AutoSize = true;
             this.lbl_Date.Font = new System.Drawing.Font("한컴 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Date.ForeColor = System.Drawing.Color.White;
+            this.lbl_Date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.lbl_Date.Location = new System.Drawing.Point(1123, 12);
             this.lbl_Date.Name = "lbl_Date";
             this.lbl_Date.Size = new System.Drawing.Size(136, 35);
@@ -145,7 +153,7 @@
             // 
             this.lbl_Pos_System.AutoSize = true;
             this.lbl_Pos_System.Font = new System.Drawing.Font("한컴 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Pos_System.ForeColor = System.Drawing.Color.White;
+            this.lbl_Pos_System.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.lbl_Pos_System.Location = new System.Drawing.Point(12, 19);
             this.lbl_Pos_System.Name = "lbl_Pos_System";
             this.lbl_Pos_System.Size = new System.Drawing.Size(206, 35);
@@ -159,7 +167,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(134)))), ((int)(((byte)(92)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.panel2.Controls.Add(this.lbl_SelectedTable);
             this.panel2.Controls.Add(this.lbl_nonSelect);
             this.panel2.Location = new System.Drawing.Point(931, 74);
@@ -171,6 +179,7 @@
             // 
             this.lbl_SelectedTable.AutoSize = true;
             this.lbl_SelectedTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_SelectedTable.ForeColor = System.Drawing.Color.White;
             this.lbl_SelectedTable.Location = new System.Drawing.Point(183, 13);
             this.lbl_SelectedTable.Name = "lbl_SelectedTable";
             this.lbl_SelectedTable.Size = new System.Drawing.Size(0, 39);
@@ -182,6 +191,7 @@
             this.lbl_nonSelect.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_nonSelect.AutoSize = true;
             this.lbl_nonSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_nonSelect.ForeColor = System.Drawing.Color.White;
             this.lbl_nonSelect.Location = new System.Drawing.Point(125, 21);
             this.lbl_nonSelect.Name = "lbl_nonSelect";
             this.lbl_nonSelect.Size = new System.Drawing.Size(147, 25);
@@ -191,7 +201,9 @@
             // 
             // btn_Manage
             // 
-            this.btn_Manage.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btn_Manage.BackColor = System.Drawing.Color.YellowGreen;
+            this.btn_Manage.FlatAppearance.BorderSize = 0;
+            this.btn_Manage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Manage.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_Manage.Location = new System.Drawing.Point(931, 690);
             this.btn_Manage.Name = "btn_Manage";
@@ -203,7 +215,9 @@
             // 
             // btn_Pay
             // 
-            this.btn_Pay.BackColor = System.Drawing.Color.OrangeRed;
+            this.btn_Pay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn_Pay.FlatAppearance.BorderSize = 0;
+            this.btn_Pay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Pay.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_Pay.Location = new System.Drawing.Point(1134, 690);
             this.btn_Pay.Name = "btn_Pay";
@@ -215,8 +229,11 @@
             // 
             // btn6
             // 
-            this.btn6.BackColor = System.Drawing.Color.Gold;
-            this.btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn6.FlatAppearance.BorderSize = 0;
+            this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn6.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn6.ForeColor = System.Drawing.Color.White;
             this.btn6.Location = new System.Drawing.Point(154, 360);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(85, 85);
@@ -229,8 +246,11 @@
             // 
             // btn7
             // 
-            this.btn7.BackColor = System.Drawing.Color.Gold;
-            this.btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn7.FlatAppearance.BorderSize = 0;
+            this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn7.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn7.ForeColor = System.Drawing.Color.White;
             this.btn7.Location = new System.Drawing.Point(274, 360);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(85, 85);
@@ -243,8 +263,11 @@
             // 
             // btn11
             // 
-            this.btn11.BackColor = System.Drawing.Color.Gold;
-            this.btn11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn11.FlatAppearance.BorderSize = 0;
+            this.btn11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn11.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn11.ForeColor = System.Drawing.Color.White;
             this.btn11.Location = new System.Drawing.Point(154, 474);
             this.btn11.Name = "btn11";
             this.btn11.Size = new System.Drawing.Size(85, 85);
@@ -257,8 +280,11 @@
             // 
             // btn12
             // 
-            this.btn12.BackColor = System.Drawing.Color.Gold;
-            this.btn12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn12.FlatAppearance.BorderSize = 0;
+            this.btn12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn12.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn12.ForeColor = System.Drawing.Color.White;
             this.btn12.Location = new System.Drawing.Point(274, 474);
             this.btn12.Name = "btn12";
             this.btn12.Size = new System.Drawing.Size(85, 85);
@@ -271,8 +297,11 @@
             // 
             // btn3
             // 
-            this.btn3.BackColor = System.Drawing.Color.Gold;
-            this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn3.FlatAppearance.BorderSize = 0;
+            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn3.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn3.ForeColor = System.Drawing.Color.White;
             this.btn3.Location = new System.Drawing.Point(397, 243);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(85, 85);
@@ -285,8 +314,11 @@
             // 
             // btn8
             // 
-            this.btn8.BackColor = System.Drawing.Color.Gold;
-            this.btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn8.FlatAppearance.BorderSize = 0;
+            this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn8.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn8.ForeColor = System.Drawing.Color.White;
             this.btn8.Location = new System.Drawing.Point(397, 360);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(85, 85);
@@ -299,8 +331,11 @@
             // 
             // btn13
             // 
-            this.btn13.BackColor = System.Drawing.Color.Gold;
-            this.btn13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn13.FlatAppearance.BorderSize = 0;
+            this.btn13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn13.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn13.ForeColor = System.Drawing.Color.White;
             this.btn13.Location = new System.Drawing.Point(397, 474);
             this.btn13.Name = "btn13";
             this.btn13.Size = new System.Drawing.Size(85, 85);
@@ -313,8 +348,11 @@
             // 
             // btn4
             // 
-            this.btn4.BackColor = System.Drawing.Color.Gold;
-            this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn4.FlatAppearance.BorderSize = 0;
+            this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn4.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn4.ForeColor = System.Drawing.Color.White;
             this.btn4.Location = new System.Drawing.Point(518, 243);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(85, 85);
@@ -327,8 +365,11 @@
             // 
             // btn9
             // 
-            this.btn9.BackColor = System.Drawing.Color.Gold;
-            this.btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn9.FlatAppearance.BorderSize = 0;
+            this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn9.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn9.ForeColor = System.Drawing.Color.White;
             this.btn9.Location = new System.Drawing.Point(518, 360);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(85, 85);
@@ -341,8 +382,11 @@
             // 
             // btn14
             // 
-            this.btn14.BackColor = System.Drawing.Color.Gold;
-            this.btn14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn14.FlatAppearance.BorderSize = 0;
+            this.btn14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn14.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn14.ForeColor = System.Drawing.Color.White;
             this.btn14.Location = new System.Drawing.Point(518, 474);
             this.btn14.Name = "btn14";
             this.btn14.Size = new System.Drawing.Size(85, 85);
@@ -355,8 +399,11 @@
             // 
             // btn5
             // 
-            this.btn5.BackColor = System.Drawing.Color.Gold;
-            this.btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn5.FlatAppearance.BorderSize = 0;
+            this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn5.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn5.ForeColor = System.Drawing.Color.White;
             this.btn5.Location = new System.Drawing.Point(639, 242);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(85, 85);
@@ -369,8 +416,11 @@
             // 
             // btn10
             // 
-            this.btn10.BackColor = System.Drawing.Color.Gold;
-            this.btn10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn10.FlatAppearance.BorderSize = 0;
+            this.btn10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn10.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn10.ForeColor = System.Drawing.Color.White;
             this.btn10.Location = new System.Drawing.Point(639, 360);
             this.btn10.Name = "btn10";
             this.btn10.Size = new System.Drawing.Size(85, 85);
@@ -383,8 +433,11 @@
             // 
             // btn15
             // 
-            this.btn15.BackColor = System.Drawing.Color.Gold;
-            this.btn15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn15.FlatAppearance.BorderSize = 0;
+            this.btn15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn15.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn15.ForeColor = System.Drawing.Color.White;
             this.btn15.Location = new System.Drawing.Point(639, 474);
             this.btn15.Name = "btn15";
             this.btn15.Size = new System.Drawing.Size(85, 85);
@@ -433,7 +486,7 @@
             // 
             this.pan_Order.Location = new System.Drawing.Point(0, 74);
             this.pan_Order.Name = "pan_Order";
-            this.pan_Order.Size = new System.Drawing.Size(1334, 742);
+            this.pan_Order.Size = new System.Drawing.Size(1337, 742);
             this.pan_Order.TabIndex = 34;
             this.pan_Order.Visible = false;
             // 
@@ -441,7 +494,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.NavajoWhite;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.ClientSize = new System.Drawing.Size(1336, 815);
             this.Controls.Add(this.pan_Order);
             this.Controls.Add(this.lv_Orders);

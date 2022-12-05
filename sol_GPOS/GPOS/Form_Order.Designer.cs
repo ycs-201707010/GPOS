@@ -140,24 +140,32 @@
             // 
             // btn_CountEdit
             // 
-            this.btn_CountEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_CountEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn_CountEdit.FlatAppearance.BorderSize = 0;
+            this.btn_CountEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_CountEdit.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_CountEdit.ForeColor = System.Drawing.Color.White;
             this.btn_CountEdit.Location = new System.Drawing.Point(3, 3);
             this.btn_CountEdit.Name = "btn_CountEdit";
             this.btn_CountEdit.Size = new System.Drawing.Size(137, 56);
             this.btn_CountEdit.TabIndex = 6;
             this.btn_CountEdit.Text = "수량";
-            this.btn_CountEdit.UseVisualStyleBackColor = true;
+            this.btn_CountEdit.UseVisualStyleBackColor = false;
             this.btn_CountEdit.Click += new System.EventHandler(this.btn_CountEdit_Click);
             // 
             // btn_allCancel
             // 
-            this.btn_allCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_allCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))));
+            this.btn_allCancel.FlatAppearance.BorderSize = 0;
+            this.btn_allCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_allCancel.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_allCancel.ForeColor = System.Drawing.Color.White;
             this.btn_allCancel.Location = new System.Drawing.Point(289, 3);
             this.btn_allCancel.Name = "btn_allCancel";
             this.btn_allCancel.Size = new System.Drawing.Size(137, 56);
             this.btn_allCancel.TabIndex = 8;
             this.btn_allCancel.Text = "전체 취소";
-            this.btn_allCancel.UseVisualStyleBackColor = true;
+            this.btn_allCancel.UseVisualStyleBackColor = false;
             this.btn_allCancel.Click += new System.EventHandler(this.btn_allCancel_Click);
             // 
             // btn_selectCancel
@@ -165,7 +173,7 @@
             this.btn_selectCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
             this.btn_selectCancel.FlatAppearance.BorderSize = 0;
             this.btn_selectCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_selectCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_selectCancel.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_selectCancel.ForeColor = System.Drawing.Color.White;
             this.btn_selectCancel.Location = new System.Drawing.Point(146, 3);
             this.btn_selectCancel.Name = "btn_selectCancel";
@@ -233,45 +241,64 @@
             // btn_cate2
             // 
             this.btn_cate2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_cate2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn_cate2.FlatAppearance.BorderSize = 0;
+            this.btn_cate2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cate2.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_cate2.ForeColor = System.Drawing.Color.White;
             this.btn_cate2.Location = new System.Drawing.Point(347, 14);
             this.btn_cate2.Name = "btn_cate2";
             this.btn_cate2.Size = new System.Drawing.Size(166, 64);
             this.btn_cate2.TabIndex = 1;
             this.btn_cate2.Text = "식사 메뉴";
-            this.btn_cate2.UseVisualStyleBackColor = true;
+            this.btn_cate2.UseVisualStyleBackColor = false;
             this.btn_cate2.Click += new System.EventHandler(this.btn_cate2_Click);
             // 
             // btn_cate1
             // 
             this.btn_cate1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_cate1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn_cate1.FlatAppearance.BorderSize = 0;
+            this.btn_cate1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cate1.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_cate1.ForeColor = System.Drawing.Color.White;
             this.btn_cate1.Location = new System.Drawing.Point(60, 14);
             this.btn_cate1.Name = "btn_cate1";
             this.btn_cate1.Size = new System.Drawing.Size(166, 64);
             this.btn_cate1.TabIndex = 0;
             this.btn_cate1.Text = "고기 메뉴";
-            this.btn_cate1.UseVisualStyleBackColor = true;
+            this.btn_cate1.UseVisualStyleBackColor = false;
             this.btn_cate1.Click += new System.EventHandler(this.btn_cate1_Click);
             // 
             // btn_cate3
             // 
             this.btn_cate3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_cate3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn_cate3.FlatAppearance.BorderSize = 0;
+            this.btn_cate3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cate3.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_cate3.ForeColor = System.Drawing.Color.White;
             this.btn_cate3.Location = new System.Drawing.Point(635, 14);
             this.btn_cate3.Name = "btn_cate3";
             this.btn_cate3.Size = new System.Drawing.Size(166, 64);
             this.btn_cate3.TabIndex = 2;
             this.btn_cate3.Text = "음료 / 주류";
-            this.btn_cate3.UseVisualStyleBackColor = true;
+            this.btn_cate3.UseVisualStyleBackColor = false;
             this.btn_cate3.Click += new System.EventHandler(this.btn_cate3_Click);
             // 
             // btn_Pay
             // 
-            this.btn_Pay.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Pay.Location = new System.Drawing.Point(3, 3);
+            this.btn_Pay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn_Pay.FlatAppearance.BorderSize = 0;
+            this.btn_Pay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Pay.Font = new System.Drawing.Font("맑은 고딕", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Pay.ForeColor = System.Drawing.Color.White;
+            this.btn_Pay.Location = new System.Drawing.Point(261, 3);
             this.btn_Pay.Name = "btn_Pay";
             this.btn_Pay.Size = new System.Drawing.Size(252, 90);
             this.btn_Pay.TabIndex = 8;
             this.btn_Pay.Text = "결제하기";
-            this.btn_Pay.UseVisualStyleBackColor = true;
+            this.btn_Pay.UseVisualStyleBackColor = false;
             this.btn_Pay.Click += new System.EventHandler(this.btn_Pay_Click);
             // 
             // tableLayoutPanel4
@@ -279,8 +306,8 @@
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.btn_doOrder, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.btn_Pay, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btn_Pay, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btn_doOrder, 0, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(805, 634);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
@@ -290,13 +317,17 @@
             // 
             // btn_doOrder
             // 
-            this.btn_doOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_doOrder.Location = new System.Drawing.Point(261, 3);
+            this.btn_doOrder.BackColor = System.Drawing.Color.YellowGreen;
+            this.btn_doOrder.FlatAppearance.BorderSize = 0;
+            this.btn_doOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_doOrder.Font = new System.Drawing.Font("맑은 고딕", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_doOrder.ForeColor = System.Drawing.Color.White;
+            this.btn_doOrder.Location = new System.Drawing.Point(3, 3);
             this.btn_doOrder.Name = "btn_doOrder";
             this.btn_doOrder.Size = new System.Drawing.Size(252, 90);
             this.btn_doOrder.TabIndex = 9;
             this.btn_doOrder.Text = "주문하기";
-            this.btn_doOrder.UseVisualStyleBackColor = true;
+            this.btn_doOrder.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel5
             // 
@@ -322,6 +353,8 @@
             // 
             // button2
             // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(218, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(209, 166);
@@ -332,6 +365,8 @@
             // 
             // button3
             // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(433, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(209, 166);
@@ -342,6 +377,8 @@
             // 
             // button4
             // 
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Location = new System.Drawing.Point(648, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(209, 166);
@@ -352,6 +389,8 @@
             // 
             // button5
             // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Location = new System.Drawing.Point(3, 175);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(209, 166);
@@ -362,6 +401,8 @@
             // 
             // button6
             // 
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Location = new System.Drawing.Point(218, 175);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(209, 166);
@@ -372,6 +413,8 @@
             // 
             // button1
             // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(209, 166);
