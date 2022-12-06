@@ -344,20 +344,29 @@ namespace GPOS
 
         private void btn_allCancel_Click(object sender, EventArgs e) // 전체 취소 버튼
         {
-            var Conn = new OleDbConnection(StrSQL);
-            int i;
+            DialogResult mb_alert = MessageBox.Show("정말 모든 주문 내역을 삭제하시겠습니까?", "알림", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
-            Conn.Open();
+            if (mb_alert == DialogResult.Yes)
+            {
+                var Conn = new OleDbConnection(StrSQL);
+                int i;
 
-            string sql = "DELETE FROM t_table" + orderTable + "Order";
+                Conn.Open();
 
-            var Comm = new OleDbCommand(sql, Conn);
-            i = Comm.ExecuteNonQuery();
+                string sql = "DELETE FROM t_table" + orderTable + "Order";
 
-            Conn.Close();
+                var Comm = new OleDbCommand(sql, Conn);
+                i = Comm.ExecuteNonQuery();
 
-            this.lv_Orders.Items.Clear();
-            lbl_totPriceModify();
+                Conn.Close();
+
+                this.lv_Orders.Items.Clear();
+                lbl_totPriceModify();
+            }
+            else
+            {
+                return;
+            }
         }
 
         private void btn_selectCancel_Click(object sender, EventArgs e)
@@ -370,26 +379,32 @@ namespace GPOS
                 return;
             }
 
-            /*MessageBox mb_alert = new MessageBox("정말 주문 내역을 삭제하시겠습니까?", "알림", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            DialogResult mb_alert = MessageBox.Show("정말 주문 내역을 삭제하시겠습니까?", "알림", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
-            mb_alert.Show();*/
+            if (mb_alert == DialogResult.Yes)
+            {
+                string MenuName = lv_Orders.SelectedItems[0].SubItems[1].Text.ToString();
 
-            string MenuName = lv_Orders.SelectedItems[0].SubItems[1].Text.ToString();
+                var Conn = new OleDbConnection(StrSQL);
+                int i;
 
-            var Conn = new OleDbConnection(StrSQL);
-            int i;
+                Conn.Open();
 
-            Conn.Open();
+                string sql = "DELETE FROM t_table" + orderTable + "Order WHERE MenuName = '" + MenuName + "'";
 
-            string sql = "DELETE FROM t_table" + orderTable + "Order WHERE MenuName = '" + MenuName + "'";
+                var Comm = new OleDbCommand(sql, Conn);
+                i = Comm.ExecuteNonQuery();
 
-            var Comm = new OleDbCommand(sql, Conn);
-            i = Comm.ExecuteNonQuery();
+                Conn.Close();
 
-            Conn.Close();
-
-            lv_Orders_View();
-            lbl_totPriceModify();
+                lv_Orders_View();
+                lbl_totPriceModify();
+            }
+            else
+            {
+                return;
+            }
+            
         }
 
         private void btn_Pay_Click(object sender, EventArgs e)
