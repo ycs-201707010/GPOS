@@ -41,7 +41,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_Discount = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -50,13 +50,13 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_Amount_Of_Payment = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txt_Card_Payment = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txt_Cash_Payment = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -69,15 +69,15 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.btn_Card_Payment = new System.Windows.Forms.Button();
+            this.btn_Cash_Payment = new System.Windows.Forms.Button();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.button15 = new System.Windows.Forms.Button();
+            this.txt_paidPrice = new System.Windows.Forms.TextBox();
+            this.btn_doPay = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -185,8 +185,10 @@
             this.txt_tot_Price.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt_tot_Price.Location = new System.Drawing.Point(147, 3);
             this.txt_tot_Price.Name = "txt_tot_Price";
+            this.txt_tot_Price.ReadOnly = true;
             this.txt_tot_Price.Size = new System.Drawing.Size(211, 43);
             this.txt_tot_Price.TabIndex = 1;
+            this.txt_tot_Price.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tableLayoutPanel1
             // 
@@ -231,7 +233,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel3.Controls.Add(this.label3, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.textBox2, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.txt_Discount, 1, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(12, 135);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
@@ -253,14 +255,18 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "할인액";
             // 
-            // textBox2
+            // txt_Discount
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(147, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(211, 43);
-            this.textBox2.TabIndex = 1;
+            this.txt_Discount.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Discount.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt_Discount.Location = new System.Drawing.Point(147, 3);
+            this.txt_Discount.Name = "txt_Discount";
+            this.txt_Discount.Size = new System.Drawing.Size(211, 43);
+            this.txt_Discount.TabIndex = 1;
+            this.txt_Discount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_Discount.Click += new System.EventHandler(this.txtBox_Click);
+            this.txt_Discount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Discount_KeyPress);
+            this.txt_Discount.Leave += new System.EventHandler(this.txt_Discount_Leave);
             // 
             // tableLayoutPanel4
             // 
@@ -341,7 +347,7 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel6.Controls.Add(this.label6, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.textBox5, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.txt_Amount_Of_Payment, 1, 0);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(12, 205);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
@@ -363,15 +369,16 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "결제금액";
             // 
-            // textBox5
+            // txt_Amount_Of_Payment
             // 
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox5.Location = new System.Drawing.Point(147, 3);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(211, 43);
-            this.textBox5.TabIndex = 1;
+            this.txt_Amount_Of_Payment.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Amount_Of_Payment.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt_Amount_Of_Payment.ForeColor = System.Drawing.Color.Maroon;
+            this.txt_Amount_Of_Payment.Location = new System.Drawing.Point(147, 3);
+            this.txt_Amount_Of_Payment.Name = "txt_Amount_Of_Payment";
+            this.txt_Amount_Of_Payment.Size = new System.Drawing.Size(211, 43);
+            this.txt_Amount_Of_Payment.TabIndex = 1;
+            this.txt_Amount_Of_Payment.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tableLayoutPanel7
             // 
@@ -380,7 +387,7 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel7.Controls.Add(this.label7, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.textBox6, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.txt_Card_Payment, 1, 0);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(12, 260);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
@@ -402,14 +409,18 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "카드결제";
             // 
-            // textBox6
+            // txt_Card_Payment
             // 
-            this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox6.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.Location = new System.Drawing.Point(147, 3);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(211, 43);
-            this.textBox6.TabIndex = 1;
+            this.txt_Card_Payment.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Card_Payment.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt_Card_Payment.Location = new System.Drawing.Point(147, 3);
+            this.txt_Card_Payment.Name = "txt_Card_Payment";
+            this.txt_Card_Payment.Size = new System.Drawing.Size(211, 43);
+            this.txt_Card_Payment.TabIndex = 1;
+            this.txt_Card_Payment.Text = "0";
+            this.txt_Card_Payment.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_Card_Payment.Click += new System.EventHandler(this.txtBox_Click);
+            this.txt_Card_Payment.Leave += new System.EventHandler(this.txt_Card_Payment_Leave);
             // 
             // tableLayoutPanel8
             // 
@@ -418,7 +429,7 @@
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel8.Controls.Add(this.label8, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.textBox7, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.txt_Cash_Payment, 1, 0);
             this.tableLayoutPanel8.Location = new System.Drawing.Point(12, 315);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
@@ -440,14 +451,18 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "현금결제";
             // 
-            // textBox7
+            // txt_Cash_Payment
             // 
-            this.textBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox7.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox7.Location = new System.Drawing.Point(147, 3);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(211, 43);
-            this.textBox7.TabIndex = 1;
+            this.txt_Cash_Payment.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Cash_Payment.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt_Cash_Payment.Location = new System.Drawing.Point(147, 3);
+            this.txt_Cash_Payment.Name = "txt_Cash_Payment";
+            this.txt_Cash_Payment.Size = new System.Drawing.Size(211, 43);
+            this.txt_Cash_Payment.TabIndex = 1;
+            this.txt_Cash_Payment.Text = "0";
+            this.txt_Cash_Payment.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_Cash_Payment.Click += new System.EventHandler(this.txtBox_Click);
+            this.txt_Cash_Payment.Leave += new System.EventHandler(this.txt_Cash_Payment_Leave);
             // 
             // button1
             // 
@@ -461,6 +476,7 @@
             this.button1.TabIndex = 22;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.keyPadClick);
             // 
             // button2
             // 
@@ -474,6 +490,7 @@
             this.button2.TabIndex = 23;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.keyPadClick);
             // 
             // button3
             // 
@@ -487,6 +504,7 @@
             this.button3.TabIndex = 24;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.keyPadClick);
             // 
             // button4
             // 
@@ -500,6 +518,7 @@
             this.button4.TabIndex = 25;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.keyPadClick);
             // 
             // button5
             // 
@@ -513,6 +532,7 @@
             this.button5.TabIndex = 26;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.keyPadClick);
             // 
             // button6
             // 
@@ -526,6 +546,7 @@
             this.button6.TabIndex = 27;
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.keyPadClick);
             // 
             // button7
             // 
@@ -539,6 +560,7 @@
             this.button7.TabIndex = 28;
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.keyPadClick);
             // 
             // button8
             // 
@@ -552,6 +574,7 @@
             this.button8.TabIndex = 29;
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.keyPadClick);
             // 
             // button9
             // 
@@ -565,6 +588,7 @@
             this.button9.TabIndex = 30;
             this.button9.Text = "9";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.keyPadClick);
             // 
             // button10
             // 
@@ -578,6 +602,7 @@
             this.button10.TabIndex = 31;
             this.button10.Text = "0";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.keyPadClick);
             // 
             // button11
             // 
@@ -591,6 +616,7 @@
             this.button11.TabIndex = 32;
             this.button11.Text = "00";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.keyPadClick);
             // 
             // button12
             // 
@@ -602,34 +628,37 @@
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(90, 90);
             this.button12.TabIndex = 33;
-            this.button12.Text = "←";
+            this.button12.Text = "C";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
-            // button13
+            // btn_Card_Payment
             // 
-            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(124)))), ((int)(((byte)(138)))));
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button13.ForeColor = System.Drawing.Color.Transparent;
-            this.button13.Location = new System.Drawing.Point(695, 80);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(90, 186);
-            this.button13.TabIndex = 34;
-            this.button13.Text = "전액  카드";
-            this.button13.UseVisualStyleBackColor = false;
+            this.btn_Card_Payment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(124)))), ((int)(((byte)(138)))));
+            this.btn_Card_Payment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Card_Payment.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Card_Payment.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_Card_Payment.Location = new System.Drawing.Point(695, 80);
+            this.btn_Card_Payment.Name = "btn_Card_Payment";
+            this.btn_Card_Payment.Size = new System.Drawing.Size(90, 186);
+            this.btn_Card_Payment.TabIndex = 34;
+            this.btn_Card_Payment.Text = "전액  카드";
+            this.btn_Card_Payment.UseVisualStyleBackColor = false;
+            this.btn_Card_Payment.Click += new System.EventHandler(this.btn_Card_Payment_Click);
             // 
-            // button14
+            // btn_Cash_Payment
             // 
-            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button14.ForeColor = System.Drawing.Color.Transparent;
-            this.button14.Location = new System.Drawing.Point(695, 272);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(90, 186);
-            this.button14.TabIndex = 35;
-            this.button14.Text = "전액  현금";
-            this.button14.UseVisualStyleBackColor = false;
+            this.btn_Cash_Payment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
+            this.btn_Cash_Payment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Cash_Payment.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Cash_Payment.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_Cash_Payment.Location = new System.Drawing.Point(695, 272);
+            this.btn_Cash_Payment.Name = "btn_Cash_Payment";
+            this.btn_Cash_Payment.Size = new System.Drawing.Size(90, 186);
+            this.btn_Cash_Payment.TabIndex = 35;
+            this.btn_Cash_Payment.Text = "전액  현금";
+            this.btn_Cash_Payment.UseVisualStyleBackColor = false;
+            this.btn_Cash_Payment.Click += new System.EventHandler(this.btn_Cash_Payment_Click);
             // 
             // tableLayoutPanel9
             // 
@@ -674,7 +703,7 @@
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel10.Controls.Add(this.label10, 0, 0);
-            this.tableLayoutPanel10.Controls.Add(this.textBox9, 1, 0);
+            this.tableLayoutPanel10.Controls.Add(this.txt_paidPrice, 1, 0);
             this.tableLayoutPanel10.Location = new System.Drawing.Point(12, 385);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
@@ -696,27 +725,30 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "받은돈";
             // 
-            // textBox9
+            // txt_paidPrice
             // 
-            this.textBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox9.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox9.Location = new System.Drawing.Point(147, 3);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(211, 43);
-            this.textBox9.TabIndex = 1;
+            this.txt_paidPrice.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_paidPrice.Enabled = false;
+            this.txt_paidPrice.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt_paidPrice.Location = new System.Drawing.Point(147, 3);
+            this.txt_paidPrice.Name = "txt_paidPrice";
+            this.txt_paidPrice.Size = new System.Drawing.Size(211, 43);
+            this.txt_paidPrice.TabIndex = 1;
+            this.txt_paidPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // button15
+            // btn_doPay
             // 
-            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button15.ForeColor = System.Drawing.Color.Transparent;
-            this.button15.Location = new System.Drawing.Point(420, 479);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(158, 90);
-            this.button15.TabIndex = 37;
-            this.button15.Text = "결제하기";
-            this.button15.UseVisualStyleBackColor = false;
+            this.btn_doPay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            this.btn_doPay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_doPay.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_doPay.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_doPay.Location = new System.Drawing.Point(517, 478);
+            this.btn_doPay.Name = "btn_doPay";
+            this.btn_doPay.Size = new System.Drawing.Size(158, 90);
+            this.btn_doPay.TabIndex = 37;
+            this.btn_doPay.Text = "결제하기";
+            this.btn_doPay.UseVisualStyleBackColor = false;
+            this.btn_doPay.Click += new System.EventHandler(this.btn_doPay_Click);
             // 
             // Form_Pay
             // 
@@ -724,10 +756,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 594);
-            this.Controls.Add(this.button15);
+            this.Controls.Add(this.btn_doPay);
             this.Controls.Add(this.tableLayoutPanel10);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button13);
+            this.Controls.Add(this.btn_Cash_Payment);
+            this.Controls.Add(this.btn_Card_Payment);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
@@ -750,6 +782,7 @@
             this.Name = "Form_Pay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form_Pay";
+            this.Load += new System.EventHandler(this.Form_Pay_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -791,7 +824,7 @@
         private TextBox textBox1;
         private TableLayoutPanel tableLayoutPanel3;
         private Label label3;
-        private TextBox textBox2;
+        private TextBox txt_Discount;
         private TableLayoutPanel tableLayoutPanel4;
         private Label label4;
         private TextBox textBox3;
@@ -800,13 +833,13 @@
         private TextBox textBox4;
         private TableLayoutPanel tableLayoutPanel6;
         private Label label6;
-        private TextBox textBox5;
+        private TextBox txt_Amount_Of_Payment;
         private TableLayoutPanel tableLayoutPanel7;
         private Label label7;
-        private TextBox textBox6;
+        private TextBox txt_Card_Payment;
         private TableLayoutPanel tableLayoutPanel8;
         private Label label8;
-        private TextBox textBox7;
+        private TextBox txt_Cash_Payment;
         private Button button1;
         private Button button2;
         private Button button3;
@@ -819,14 +852,14 @@
         private Button button10;
         private Button button11;
         private Button button12;
-        private Button button13;
-        private Button button14;
+        private Button btn_Card_Payment;
+        private Button btn_Cash_Payment;
         private TableLayoutPanel tableLayoutPanel9;
         private Label label9;
         private TextBox textBox8;
         private TableLayoutPanel tableLayoutPanel10;
         private Label label10;
-        private TextBox textBox9;
-        private Button button15;
+        private TextBox txt_paidPrice;
+        private Button btn_doPay;
     }
 }

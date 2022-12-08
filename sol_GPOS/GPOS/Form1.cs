@@ -43,7 +43,7 @@ namespace GPOS
             }
         }
 
-        private void lv_Orders_View()
+        public void lv_Orders_View()
         {
             int i = 0; // No 작성시 사용
             this.lv_Orders.Items.Clear();
@@ -125,7 +125,7 @@ namespace GPOS
                 form_order.Dock = System.Windows.Forms.DockStyle.Fill;
                 pan_Order.Controls.Add(form_order);
                 form_order.Show();
-            }
+            }  
         }
 
         private void btn_back_Click(object sender, EventArgs e)

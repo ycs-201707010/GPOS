@@ -48,7 +48,6 @@
             this.btn_cate3 = new System.Windows.Forms.Button();
             this.btn_Pay = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.btn_doOrder = new System.Windows.Forms.Button();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -307,27 +306,12 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Controls.Add(this.btn_Pay, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.btn_doOrder, 0, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(805, 634);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(517, 96);
             this.tableLayoutPanel4.TabIndex = 9;
-            // 
-            // btn_doOrder
-            // 
-            this.btn_doOrder.BackColor = System.Drawing.Color.YellowGreen;
-            this.btn_doOrder.FlatAppearance.BorderSize = 0;
-            this.btn_doOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_doOrder.Font = new System.Drawing.Font("맑은 고딕", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_doOrder.ForeColor = System.Drawing.Color.White;
-            this.btn_doOrder.Location = new System.Drawing.Point(3, 3);
-            this.btn_doOrder.Name = "btn_doOrder";
-            this.btn_doOrder.Size = new System.Drawing.Size(252, 90);
-            this.btn_doOrder.TabIndex = 9;
-            this.btn_doOrder.Text = "주문하기";
-            this.btn_doOrder.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel5
             // 
@@ -441,6 +425,7 @@
             this.Name = "Form_Order";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form_Order";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_Order_FormClosed);
             this.Load += new System.EventHandler(this.Form_Order_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -473,7 +458,6 @@
         private TableLayoutPanel tableLayoutPanel3;
         private Button btn_Pay;
         private TableLayoutPanel tableLayoutPanel4;
-        private Button btn_doOrder;
         private TableLayoutPanel tableLayoutPanel5;
         private Button btn_cate3;
         private Button btn_cate2;

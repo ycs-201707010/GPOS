@@ -160,3 +160,76 @@ C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀�
 C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\gitt\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.pdb
 C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\gitt\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.genruntimeconfig.cache
 C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\gitt\GPOS\sol_GPOS\GPOS\obj\Debug\net6.0-windows\ref\GPOS.dll
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\GPOS.exe
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\GPOS.deps.json
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\GPOS.runtimeconfig.json
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\GPOS.dll
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\GPOS.pdb
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\Microsoft.Win32.SystemEvents.dll
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Data.OleDb.dll
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Diagnostics.PerformanceCounter.dll
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Drawing.Common.dll
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Security.Permissions.dll
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Windows.Extensions.dll
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Data.OleDb.dll
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.csproj.AssemblyReference.cache
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.Form1.resources
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.Form_CountModify.resources
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.Form_Order.resources
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.Form_Pay.resources
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.Properties.Resources.resources
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.csproj.GenerateResource.cache
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.AssemblyInfoInputs.cache
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.AssemblyInfo.cs
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.csproj.CoreCompileInputs.cache
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.csproj.CopyComplete
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.dll
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\refint\GPOS.dll
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.pdb
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.genruntimeconfig.cache
+D:\Study\GPOS-main\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\ref\GPOS.dll
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\GPOS.exe
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\GPOS.deps.json
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\GPOS.runtimeconfig.json
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\GPOS.dll
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\GPOS.pdb
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Data.OleDb.dll
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Diagnostics.PerformanceCounter.dll
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Drawing.Common.dll
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Security.Permissions.dll
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\System.Windows.Extensions.dll
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Data.OleDb.dll
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.csproj.AssemblyReference.cache
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.Form1.resources
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.Form_CountModify.resources
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.Form_Order.resources
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.Form_Pay.resources
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.Properties.Resources.resources
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.csproj.GenerateResource.cache
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.AssemblyInfoInputs.cache
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.AssemblyInfo.cs
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.csproj.CoreCompileInputs.cache
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.csproj.CopyComplete
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.dll
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\refint\GPOS.dll
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.pdb
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.genruntimeconfig.cache
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\ref\GPOS.dll
+C:\Users\kimts\OneDrive\바탕 화면\Study\3-2\기업솔루션프로젝트\팀플\GPOS-main\sol_GPOS\GPOS\obj\Debug\net6.0-windows\GPOS.Form_process.resources

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kimts\\OneDrive\\바탕 화면\\Study\\3-2\\기업솔루션프로젝트\\팀플\\gitt\\GPOS\\sol_GPOS\\GPOS\\GPOS.csproj": {}
+    "C:\\Users\\kimts\\OneDrive\\바탕 화면\\Study\\3-2\\기업솔루션프로젝트\\팀플\\GPOS-main\\sol_GPOS\\GPOS\\GPOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kimts\\OneDrive\\바탕 화면\\Study\\3-2\\기업솔루션프로젝트\\팀플\\gitt\\GPOS\\sol_GPOS\\GPOS\\GPOS.csproj": {
+    "C:\\Users\\kimts\\OneDrive\\바탕 화면\\Study\\3-2\\기업솔루션프로젝트\\팀플\\GPOS-main\\sol_GPOS\\GPOS\\GPOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kimts\\OneDrive\\바탕 화면\\Study\\3-2\\기업솔루션프로젝트\\팀플\\gitt\\GPOS\\sol_GPOS\\GPOS\\GPOS.csproj",
+        "projectUniqueName": "C:\\Users\\kimts\\OneDrive\\바탕 화면\\Study\\3-2\\기업솔루션프로젝트\\팀플\\GPOS-main\\sol_GPOS\\GPOS\\GPOS.csproj",
         "projectName": "GPOS",
-        "projectPath": "C:\\Users\\kimts\\OneDrive\\바탕 화면\\Study\\3-2\\기업솔루션프로젝트\\팀플\\gitt\\GPOS\\sol_GPOS\\GPOS\\GPOS.csproj",
+        "projectPath": "C:\\Users\\kimts\\OneDrive\\바탕 화면\\Study\\3-2\\기업솔루션프로젝트\\팀플\\GPOS-main\\sol_GPOS\\GPOS\\GPOS.csproj",
         "packagesPath": "C:\\Users\\kimts\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kimts\\OneDrive\\바탕 화면\\Study\\3-2\\기업솔루션프로젝트\\팀플\\gitt\\GPOS\\sol_GPOS\\GPOS\\obj\\",
+        "outputPath": "C:\\Users\\kimts\\OneDrive\\바탕 화면\\Study\\3-2\\기업솔루션프로젝트\\팀플\\GPOS-main\\sol_GPOS\\GPOS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

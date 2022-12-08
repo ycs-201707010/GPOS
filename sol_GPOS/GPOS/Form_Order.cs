@@ -409,8 +409,29 @@ namespace GPOS
 
         private void btn_Pay_Click(object sender, EventArgs e)
         {
-            Form_Pay f_pay = new Form_Pay();
+            if (lbl_totPrice.Text.Length == 0)
+            {
+                MessageBox.Show("주문 내역이 없어 결제할 수 없습니다.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            Form_Pay f_pay = new Form_Pay(orderTable);
+            f_pay.PassValue = totPrice;
             f_pay.ShowDialog();
+
+            if (f_pay.DialogResult == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void Form_Order_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ((Form1)ParentForm).pan_Order.Visible = false;
+            ((Form1)ParentForm).lbl_Pos_System.Visible = true;
+            ((Form1)ParentForm).btn_back.Visible = false;
+
+            ((Form1)ParentForm).lv_Orders_View();
         }
     }
 }

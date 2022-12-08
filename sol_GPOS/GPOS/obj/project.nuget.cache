@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lMVMiutajS4IsupbE64Onu2y4+dMvNS1/SKTrFLZaxR8BwIuVQi5az94R2KFhblKD+fwrQKJ4V8iTEOsQC6E2g==",
+  "dgSpecHash": "XelkLtKyCdr/2CVF7zLsyBegk4dliW5sabAwD5nmR1XtS+YCoCWYMuHZgfKEWKyfB9q3ZyKIfCyl6VIhRkzK5A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kimts\\OneDrive\\바탕 화면\\Study\\3-2\\기업솔루션프로젝트\\팀플\\gitt\\GPOS\\sol_GPOS\\GPOS\\GPOS.csproj",
+  "projectFilePath": "C:\\Users\\kimts\\OneDrive\\바탕 화면\\Study\\3-2\\기업솔루션프로젝트\\팀플\\GPOS-main\\sol_GPOS\\GPOS\\GPOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kimts\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
     "C:\\Users\\kimts\\.nuget\\packages\\system.configuration.configurationmanager\\7.0.0\\system.configuration.configurationmanager.7.0.0.nupkg.sha512",

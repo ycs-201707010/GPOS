@@ -41,7 +41,6 @@
             this.lbl_SelectedTable = new System.Windows.Forms.Label();
             this.lbl_nonSelect = new System.Windows.Forms.Label();
             this.btn_Manage = new System.Windows.Forms.Button();
-            this.btn_Pay = new System.Windows.Forms.Button();
             this.btn6 = new System.Windows.Forms.Button();
             this.btn7 = new System.Windows.Forms.Button();
             this.btn11 = new System.Windows.Forms.Button();
@@ -207,25 +206,11 @@
             this.btn_Manage.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_Manage.Location = new System.Drawing.Point(931, 690);
             this.btn_Manage.Name = "btn_Manage";
-            this.btn_Manage.Size = new System.Drawing.Size(203, 126);
+            this.btn_Manage.Size = new System.Drawing.Size(406, 126);
             this.btn_Manage.TabIndex = 18;
             this.btn_Manage.Text = "주문관리";
             this.btn_Manage.UseVisualStyleBackColor = false;
             this.btn_Manage.Click += new System.EventHandler(this.btn_Manage_Click);
-            // 
-            // btn_Pay
-            // 
-            this.btn_Pay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
-            this.btn_Pay.FlatAppearance.BorderSize = 0;
-            this.btn_Pay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Pay.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Pay.Location = new System.Drawing.Point(1134, 690);
-            this.btn_Pay.Name = "btn_Pay";
-            this.btn_Pay.Size = new System.Drawing.Size(203, 126);
-            this.btn_Pay.TabIndex = 19;
-            this.btn_Pay.Text = "결제하기";
-            this.btn_Pay.UseVisualStyleBackColor = false;
-            this.btn_Pay.Click += new System.EventHandler(this.btn_Pay_Click);
             // 
             // btn6
             // 
@@ -498,7 +483,6 @@
             this.ClientSize = new System.Drawing.Size(1336, 815);
             this.Controls.Add(this.pan_Order);
             this.Controls.Add(this.lv_Orders);
-            this.Controls.Add(this.btn_Pay);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn5);
             this.Controls.Add(this.btn4);
@@ -535,14 +519,12 @@
         private Button btn1;
         private Button btn2;
         private Panel panel1;
-        private Label lbl_Pos_System;
         private Label lbl_Date;
         private System.Windows.Forms.Timer timer1;
         private Label lbl_Time;
         private Panel panel2;
         private Label lbl_SelectedTable;
         private Button btn_Manage;
-        private Button btn_Pay;
         private Button btn6;
         private Button btn7;
         private Button btn11;
@@ -557,12 +539,13 @@
         private Button btn10;
         private Button btn15;
         private Label lbl_nonSelect;
-        private Button btn_back;
         private ListView lv_Orders;
         private ColumnHeader col_No;
         private ColumnHeader col_Name;
         private ColumnHeader col_Count;
         private ColumnHeader col_Cost;
-        private Panel pan_Order;
+        public Panel pan_Order;
+        public Label lbl_Pos_System;
+        public Button btn_back;
     }
 }
